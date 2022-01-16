@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <style>
+        body {
+            background-color: #EAF6F6;
+        }
+
+        .vl {
+            border-left: 6px solid yellow;
+            height: 1000px;
+            position: absolute;
+            left: 1%;
+            margin-left: -3px;
+            top: 0;
+
+            border-right: 6px solid yellow;
+            height: 1000px;
+            position: absolute;
+            right: 1%;
+            margin-right: -3px;
+            top: 0;
+        }
+
+        body {
+            padding: 25px;
+            background-color: white;
+            color: rgb(27, 21, 21);
+            font-size: 25px;
+        }
+
+        .dark-mode {
+            background-color: rgb(27, 21, 21);
+            color: white;
+        }
+    </style>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--  <div class="vl"></div>
+    <div class="vl"></div>
+    -->
+    <table cellspacing="10">
+        <tr>
+            <td>
+                <h2>My Contact Details</h2>
+                <ol>
+                    <li>E-mail-<a href="https://mail.google.com/mail/u/0/#inbox?compose=new"> Click here </a></li>
+                    <br>
+                    <li>Contact Number- <strong>9565645523</strong><a href="https://globfone.com/call-phone-online/">
+                            Click here</a>
+                        to call online</li>
+                    <br>
+                    <li>Address-<a href="https://maps.app.goo.gl/FbHtKyLtm9b3xG4C8"> Click here</a></li>
+                </ol>
+            </td>
+            <td>
+                <h4>Toggle Dark/Light Mode</h4>
+            </td>
+            <td>
+                <button onclick="myFunction()">Toggle dark mode</button>
+
+                <script>
+                    function myFunction() {
+                        var element = document.body;
+                        element.classList.toggle("dark-mode");
+                    }
+                </script>
+            </td>
+        </tr>
+    </table>
+
+    <hr size="5">
+    <form action="mailto:prateektivedi.xavier@gmail.com" method="post" enctype="text/plain">
+        <label>Your Name:</label>
+        <input type="text" name="Your Name" value=""><br>
+        <label>Your Email:</label>
+        <input type="email" name="Your Email" value=""><br>
+        <label>Your Messsage:</label><br>
+        <textarea name="Your Message" id="" cols="30" rows="10"></textarea><br>
+        <input type="submit" name="">
+    </form>
+</body>
+
+</html>
